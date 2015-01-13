@@ -51,31 +51,31 @@ subMenu3.add_command(label="Information")
 
 class Start:
     def __init__(self, master):
-        frame = Frame(master, bg="gray12")
+        frame = Frame(master, bg="azure")
         frame.pack(fill=X)
 
-        self.Label_1 = Label(frame, text="Bitte wählen Sie die Rechenart aus, die Sie benutzen möchten!", bg="gray12",
-                             fg="cyan3")
-        self.Label_2 = Label(frame, text="Addition", bg="gray12", fg="cyan3")
-        self.Label_3 = Label(frame, text="Subtraktion", bg="gray12", fg="cyan3")
-        self.Label_4 = Label(frame, text="Multiplikation", bg="gray12", fg="cyan3")
-        self.Label_5 = Label(frame, text="Division", bg="gray12", fg="cyan3")
-        self.Label_6 = Label(frame, text="Wurzel", bg="gray12", fg="cyan3")
-        self.Label_7 = Label(frame, text="Logarithmus", bg="gray12", fg="cyan3")
-        self.Label_8 = Label(frame, text="Potenz", bg="gray12", fg="cyan3")
-        self.Label_9 = Label(frame, text="Zinsberechnung", bg="gray12", fg="cyan3")
-        self.Label_10 = Label(frame, text="Weihnachtsspecial", bg="gray12", fg="cyan3")
-        self.Label_11 = Label(frame, text="©2015 - Lars Roth", bg="gray12", fg="cyan3", bd=1)
-        self.Button_1 = Button(frame, text="Go!", command=add, width=11, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Button_2 = Button(frame, text="Go!", command=sub, width=11, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Button_3 = Button(frame, text="Go!", command=mul, width=11, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Button_4 = Button(frame, text="Go!", command=div, width=11, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Button_5 = Button(frame, text="Go!", command=wur, width=11, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Button_6 = Button(frame, text="Go!", command=log, width=11, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Button_7 = Button(frame, text="Go!", command=pot, width=11, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Button_8 = Button(frame, text="Go!", command=zin, width=11, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Button_9 = Button(frame, text="Go!", command=troll, width=11, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Button_10 = Button(frame, text="Das Programm beenden!", command=stop, width=36, bg="gray12", fg="cyan3",
+        self.Label_1 = Label(frame, text="Bitte wählen Sie die Rechenart aus, die Sie benutzen möchten!", bg="azure",
+                             fg="DarkOrange3")
+        self.Label_2 = Label(frame, text="Addition", bg="azure", fg="DarkOrange3")
+        self.Label_3 = Label(frame, text="Subtraktion", bg="azure", fg="DarkOrange3")
+        self.Label_4 = Label(frame, text="Multiplikation", bg="azure", fg="DarkOrange3")
+        self.Label_5 = Label(frame, text="Division", bg="azure", fg="DarkOrange3")
+        self.Label_6 = Label(frame, text="Wurzel", bg="azure", fg="DarkOrange3")
+        self.Label_7 = Label(frame, text="Logarithmus", bg="azure", fg="DarkOrange3")
+        self.Label_8 = Label(frame, text="Potenz", bg="azure", fg="DarkOrange3")
+        self.Label_9 = Label(frame, text="Zinsberechnung", bg="azure", fg="DarkOrange3")
+        self.Label_10 = Label(frame, text="Weihnachtsspecial", bg="azure", fg="DarkOrange3")
+        self.Label_11 = Label(frame, text="©2015 - Lars Roth", bg="azure", fg="DarkOrange3", bd=1)
+        self.Button_1 = Button(frame, text="Go!", command=add, width=11, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Button_2 = Button(frame, text="Go!", command=sub, width=11, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Button_3 = Button(frame, text="Go!", command=mul, width=11, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Button_4 = Button(frame, text="Go!", command=div, width=11, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Button_5 = Button(frame, text="Go!", command=wur, width=11, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Button_6 = Button(frame, text="Go!", command=log, width=11, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Button_7 = Button(frame, text="Go!", command=pot, width=11, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Button_8 = Button(frame, text="Go!", command=zin, width=11, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Button_9 = Button(frame, text="Go!", command=troll, width=11, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Button_10 = Button(frame, text="Das Programm beenden!", command=stop, width=36, bg="azure", fg="DarkOrange3",
                                 relief=RIDGE)
 
         self.Label_1.grid(row=0, columnspan=2)
@@ -111,7 +111,7 @@ class add:
         newwin = Toplevel()
         newwin.title("Addition")
         newwin.geometry("500x80")
-        frame2 = Frame(newwin, bg="gray12")
+        frame2 = Frame(newwin, bg="azure")
         frame2.pack(fill=BOTH, expand=5)
 
         global var1
@@ -119,16 +119,16 @@ class add:
         var1 = StringVar()
         var1.set("Ready")
 
-        self.Label_1 = Label(frame2, text="Additionsverfahren", bg="gray12", fg="cyan3")
-        self.Entry_1 = Entry(frame2, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Label_2 = Label(frame2, text="+", bg="gray12", fg="cyan3")
-        self.Entry_2 = Entry(frame2, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Label_3 = Label(frame2, text="=", bg="gray12", fg="cyan3")
-        self.Button_1 = Button(frame2, text="Zurück", command=newwin.destroy, width=20, bg="gray12", fg="cyan3",
+        self.Label_1 = Label(frame2, text="Additionsverfahren", bg="azure", fg="DarkOrange3")
+        self.Entry_1 = Entry(frame2, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Label_2 = Label(frame2, text="+", bg="azure", fg="DarkOrange3")
+        self.Entry_2 = Entry(frame2, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Label_3 = Label(frame2, text="=", bg="azure", fg="DarkOrange3")
+        self.Button_1 = Button(frame2, text="Zurück", command=newwin.destroy, width=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
-        self.Button_2 = Button(frame2, text="Ergebniss berechnen", command=self.calc, width=20, bg="gray12", fg="cyan3",
+        self.Button_2 = Button(frame2, text="Ergebniss berechnen", command=self.calc, width=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
-        self.Button_3 = Button(frame2, text="Reset", command=self.reset, width=20, bg="gray12", fg="cyan3",
+        self.Button_3 = Button(frame2, text="Reset", command=self.reset, width=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
         self.Label_Erg1 = Label(frame2, textvariable=var1, fg="red", underline=0, relief="ridge", bg="yellow3",
                                 width=17)
@@ -169,7 +169,7 @@ class sub:
         newwin = Toplevel()
         newwin.title("Subtraktion")
         newwin.geometry("500x80")
-        frame2 = Frame(newwin, bg="gray12")
+        frame2 = Frame(newwin, bg="azure")
         frame2.pack(fill=BOTH, expand=5)
 
         global var2
@@ -177,16 +177,16 @@ class sub:
         var2 = StringVar()
         var2.set("Ready")
 
-        self.Label_1 = Label(frame2, text="Subtraktionsverfahren", bg="gray12", fg="cyan3")
-        self.Entry_3 = Entry(frame2, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Label_2 = Label(frame2, text="-", bg="gray12", fg="cyan3")
-        self.Entry_4 = Entry(frame2, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Label_3 = Label(frame2, text="=", bg="gray12", fg="cyan3")
-        self.Button_1 = Button(frame2, text="Zurück", command=newwin.destroy, width=20, bg="gray12", fg="cyan3",
+        self.Label_1 = Label(frame2, text="Subtraktionsverfahren", bg="azure", fg="DarkOrange3")
+        self.Entry_3 = Entry(frame2, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Label_2 = Label(frame2, text="-", bg="azure", fg="DarkOrange3")
+        self.Entry_4 = Entry(frame2, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Label_3 = Label(frame2, text="=", bg="azure", fg="DarkOrange3")
+        self.Button_1 = Button(frame2, text="Zurück", command=newwin.destroy, width=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
-        self.Button_2 = Button(frame2, text="Ergebniss berechnen", command=self.calc, width=20, bg="gray12", fg="cyan3",
+        self.Button_2 = Button(frame2, text="Ergebniss berechnen", command=self.calc, width=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
-        self.Button_3 = Button(frame2, text="Reset", command=self.reset, width=20, bg="gray12", fg="cyan3",
+        self.Button_3 = Button(frame2, text="Reset", command=self.reset, width=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
         self.Label_Erg2 = Label(frame2, textvariable=var2, fg="red", underline=0, relief="ridge", bg="yellow3",
                                 width=17)
@@ -227,7 +227,7 @@ class mul:
         newwin = Toplevel()
         newwin.title("Multiplikation")
         newwin.geometry("500x80")
-        frame2 = Frame(newwin, bg="gray12")
+        frame2 = Frame(newwin, bg="azure")
         frame2.pack(fill=BOTH, expand=5)
 
         global var3
@@ -235,16 +235,16 @@ class mul:
         var3 = StringVar()
         var3.set("Ready")
 
-        self.Label_1 = Label(frame2, text="Multiplikationssverfahren", bg="gray12", fg="cyan3")
-        self.Entry_5 = Entry(frame2, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Label_2 = Label(frame2, text="*", bg="gray12", fg="cyan3")
-        self.Entry_6 = Entry(frame2, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Label_3 = Label(frame2, text="=", bg="gray12", fg="cyan3")
-        self.Button_1 = Button(frame2, text="Zurück", command=newwin.destroy, width=20, bg="gray12", fg="cyan3",
+        self.Label_1 = Label(frame2, text="Multiplikationssverfahren", bg="azure", fg="DarkOrange3")
+        self.Entry_5 = Entry(frame2, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Label_2 = Label(frame2, text="*", bg="azure", fg="DarkOrange3")
+        self.Entry_6 = Entry(frame2, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Label_3 = Label(frame2, text="=", bg="azure", fg="DarkOrange3")
+        self.Button_1 = Button(frame2, text="Zurück", command=newwin.destroy, width=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
-        self.Button_2 = Button(frame2, text="Ergebniss berechnen", command=self.calc, width=20, bg="gray12", fg="cyan3",
+        self.Button_2 = Button(frame2, text="Ergebniss berechnen", command=self.calc, width=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
-        self.Button_3 = Button(frame2, text="Reset", command=self.reset, width=20, bg="gray12", fg="cyan3",
+        self.Button_3 = Button(frame2, text="Reset", command=self.reset, width=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
         self.Label_Erg3 = Label(frame2, textvariable=var3, fg="red", underline=0, relief="ridge", bg="yellow3",
                                 width=17)
@@ -286,7 +286,7 @@ class div:
         newwin = Toplevel()
         newwin.title("Division")
         newwin.geometry("500x80")
-        frame2 = Frame(newwin, bg="gray12")
+        frame2 = Frame(newwin, bg="azure")
         frame2.pack(fill=BOTH, expand=5)
 
         global var4
@@ -294,16 +294,16 @@ class div:
         var4 = StringVar()
         var4.set("Ready")
 
-        self.Label_1 = Label(frame2, text="Divisionsverfahren", bg="gray12", fg="cyan3")
-        self.Entry_7 = Entry(frame2, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Label_2 = Label(frame2, text="/", bg="gray12", fg="cyan3")
-        self.Entry_8 = Entry(frame2, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Label_3 = Label(frame2, text="=", bg="gray12", fg="cyan3")
-        self.Button_1 = Button(frame2, text="Zurück", command=newwin.destroy, width=20, bg="gray12", fg="cyan3",
+        self.Label_1 = Label(frame2, text="Divisionsverfahren", bg="azure", fg="DarkOrange3")
+        self.Entry_7 = Entry(frame2, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Label_2 = Label(frame2, text="/", bg="azure", fg="DarkOrange3")
+        self.Entry_8 = Entry(frame2, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Label_3 = Label(frame2, text="=", bg="azure", fg="DarkOrange3")
+        self.Button_1 = Button(frame2, text="Zurück", command=newwin.destroy, width=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
-        self.Button_2 = Button(frame2, text="Ergebniss berechnen", command=self.calc, width=20, bg="gray12", fg="cyan3",
+        self.Button_2 = Button(frame2, text="Ergebniss berechnen", command=self.calc, width=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
-        self.Button_3 = Button(frame2, text="Reset", command=self.reset, width=20, bg="gray12", fg="cyan3",
+        self.Button_3 = Button(frame2, text="Reset", command=self.reset, width=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
         self.Label_Erg4 = Label(frame2, textvariable=var4, fg="red", underline=0, relief="ridge", bg="yellow3",
                                 width=17)
@@ -344,7 +344,7 @@ class wur:
         newwin = Toplevel()
         newwin.title("Wurzel")
         newwin.geometry("510x80")
-        frame2 = Frame(newwin, bg="gray12")
+        frame2 = Frame(newwin, bg="azure")
         frame2.pack(fill=BOTH, expand=5)
 
         global var5
@@ -352,17 +352,17 @@ class wur:
         var5 = StringVar()
         var5.set("Ready")
 
-        self.Label_1 = Label(frame2, text="Wurzelziehen", bg="gray12", fg="cyan3")
-        self.Label_4 = Label(frame2, text="Die", bg="gray12", fg="cyan3")
-        self.Entry_9 = Entry(frame2, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Label_2 = Label(frame2, text="Wurzel von", bg="gray12", fg="cyan3")
-        self.Entry_10 = Entry(frame2, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Label_3 = Label(frame2, text="=", bg="gray12", fg="cyan3")
-        self.Button_1 = Button(frame2, text="Zurück", command=newwin.destroy, width=20, bg="gray12", fg="cyan3",
+        self.Label_1 = Label(frame2, text="Wurzelziehen", bg="azure", fg="DarkOrange3")
+        self.Label_4 = Label(frame2, text="Die", bg="azure", fg="DarkOrange3")
+        self.Entry_9 = Entry(frame2, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Label_2 = Label(frame2, text="Wurzel von", bg="azure", fg="DarkOrange3")
+        self.Entry_10 = Entry(frame2, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Label_3 = Label(frame2, text="=", bg="azure", fg="DarkOrange3")
+        self.Button_1 = Button(frame2, text="Zurück", command=newwin.destroy, width=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
-        self.Button_2 = Button(frame2, text="Ergebniss berechnen", command=self.calc, width=20, bg="gray12", fg="cyan3",
+        self.Button_2 = Button(frame2, text="Ergebniss berechnen", command=self.calc, width=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
-        self.Button_3 = Button(frame2, text="Reset", command=self.reset, width=20, bg="gray12", fg="cyan3",
+        self.Button_3 = Button(frame2, text="Reset", command=self.reset, width=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
         self.Label_Erg5 = Label(frame2, textvariable=var5, fg="red", underline=0, relief="ridge", bg="yellow3",
                                 width=17)
@@ -404,7 +404,7 @@ class log:
         newwin = Toplevel()
         newwin.title("Wurzel")
         newwin.geometry("550x80")
-        frame2 = Frame(newwin, bg="gray12")
+        frame2 = Frame(newwin, bg="azure")
         frame2.pack(fill=BOTH, expand=5)
 
         global var6
@@ -412,17 +412,17 @@ class log:
         var6 = StringVar()
         var6.set("Ready")
 
-        self.Label_1 = Label(frame2, text="Logarithmus", bg="gray12", fg="cyan3")
-        self.Label_4 = Label(frame2, text="Der Log. von", bg="gray12", fg="cyan3")
-        self.Entry_11 = Entry(frame2, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Label_2 = Label(frame2, text="mit Basis", bg="gray12", fg="cyan3")
-        self.Entry_12 = Entry(frame2, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Label_3 = Label(frame2, text="=", bg="gray12", fg="cyan3")
-        self.Button_1 = Button(frame2, text="Zurück", command=newwin.destroy, width=20, bg="gray12", fg="cyan3",
+        self.Label_1 = Label(frame2, text="Logarithmus", bg="azure", fg="DarkOrange3")
+        self.Label_4 = Label(frame2, text="Der Log. von", bg="azure", fg="DarkOrange3")
+        self.Entry_11 = Entry(frame2, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Label_2 = Label(frame2, text="mit Basis", bg="azure", fg="DarkOrange3")
+        self.Entry_12 = Entry(frame2, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Label_3 = Label(frame2, text="=", bg="azure", fg="DarkOrange3")
+        self.Button_1 = Button(frame2, text="Zurück", command=newwin.destroy, width=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
-        self.Button_2 = Button(frame2, text="Ergebniss berechnen", command=self.calc, width=20, bg="gray12", fg="cyan3",
+        self.Button_2 = Button(frame2, text="Ergebniss berechnen", command=self.calc, width=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
-        self.Button_3 = Button(frame2, text="Reset", command=self.reset, width=20, bg="gray12", fg="cyan3",
+        self.Button_3 = Button(frame2, text="Reset", command=self.reset, width=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
         self.Label_Erg6 = Label(frame2, textvariable=var6, fg="red", underline=0, relief="ridge", bg="yellow3",
                                 width=17)
@@ -464,7 +464,7 @@ class pot:
         newwin = Toplevel()
         newwin.title("Potenz")
         newwin.geometry("520x80")
-        frame2 = Frame(newwin, bg="gray12")
+        frame2 = Frame(newwin, bg="azure")
         frame2.pack(fill=BOTH, expand=5)
 
         global var7
@@ -472,16 +472,16 @@ class pot:
         var7 = StringVar()
         var7.set("Ready")
 
-        self.Label_1 = Label(frame2, text="Potenzierung", bg="gray12", fg="cyan3")
-        self.Entry_13 = Entry(frame2, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Label_2 = Label(frame2, text="hoch", bg="gray12", fg="cyan3")
-        self.Entry_14 = Entry(frame2, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Label_3 = Label(frame2, text="=", bg="gray12", fg="cyan3")
-        self.Button_1 = Button(frame2, text="Zurück", command=newwin.destroy, width=20, bg="gray12", fg="cyan3",
+        self.Label_1 = Label(frame2, text="Potenzierung", bg="azure", fg="DarkOrange3")
+        self.Entry_13 = Entry(frame2, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Label_2 = Label(frame2, text="hoch", bg="azure", fg="DarkOrange3")
+        self.Entry_14 = Entry(frame2, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Label_3 = Label(frame2, text="=", bg="azure", fg="DarkOrange3")
+        self.Button_1 = Button(frame2, text="Zurück", command=newwin.destroy, width=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
-        self.Button_2 = Button(frame2, text="Ergebniss berechnen", command=self.calc, width=20, bg="gray12", fg="cyan3",
+        self.Button_2 = Button(frame2, text="Ergebniss berechnen", command=self.calc, width=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
-        self.Button_3 = Button(frame2, text="Reset", command=self.reset, width=20, bg="gray12", fg="cyan3",
+        self.Button_3 = Button(frame2, text="Reset", command=self.reset, width=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
         self.Label_Erg7 = Label(frame2, textvariable=var7, fg="red", underline=0, relief="ridge", bg="yellow3",
                                 width=17)
@@ -522,7 +522,7 @@ class zin:
         newwin = Toplevel()
         newwin.title("Zinsberechnung")
         newwin.geometry("299x190")
-        frame2 = Frame(newwin, bg="gray12")
+        frame2 = Frame(newwin, bg="azure")
         frame2.pack(fill=BOTH, expand=5)
 
         global var_zin
@@ -530,19 +530,19 @@ class zin:
         var_zin = StringVar()
         var_zin.set("Ready")
 
-        self.Label_1 = Label(frame2, text="Zinsberechnung", bg="gray12", fg="cyan3")
-        self.Label_2 = Label(frame2, text="Kapital:", bg="gray12", fg="cyan3")
-        self.Label_3 = Label(frame2, text="Zinssatz:", bg="gray12", fg="cyan3")
-        self.Label_4 = Label(frame2, text="Anlagejahre:", bg="gray12", fg="cyan3")
-        self.Label_5 = Label(frame2, text="Endkapital:", bg="gray12", fg="cyan3")
-        self.Entry_zin1 = Entry(frame2, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Entry_zin2 = Entry(frame2, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Entry_zin3 = Entry(frame2, bg="gray12", fg="cyan3", relief=RIDGE)
-        self.Button_1 = Button(frame2, text="Zurück", command=newwin.destroy, width=40, bg="gray12", fg="cyan3",
+        self.Label_1 = Label(frame2, text="Zinsberechnung", bg="azure", fg="DarkOrange3")
+        self.Label_2 = Label(frame2, text="Kapital:", bg="azure", fg="DarkOrange3")
+        self.Label_3 = Label(frame2, text="Zinssatz:", bg="azure", fg="DarkOrange3")
+        self.Label_4 = Label(frame2, text="Anlagejahre:", bg="azure", fg="DarkOrange3")
+        self.Label_5 = Label(frame2, text="Endkapital:", bg="azure", fg="DarkOrange3")
+        self.Entry_zin1 = Entry(frame2, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Entry_zin2 = Entry(frame2, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Entry_zin3 = Entry(frame2, bg="azure", fg="DarkOrange3", relief=RIDGE)
+        self.Button_1 = Button(frame2, text="Zurück", command=newwin.destroy, width=40, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
-        self.Button_2 = Button(frame2, text="Ergebniss berechnen", command=self.calc, width=19, bg="gray12", fg="cyan3",
+        self.Button_2 = Button(frame2, text="Ergebniss berechnen", command=self.calc, width=19, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
-        self.Button_3 = Button(frame2, text="Reset", command=self.reset, width=19, bg="gray12", fg="cyan3",
+        self.Button_3 = Button(frame2, text="Reset", command=self.reset, width=19, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
         self.Label_Erg_zin = Label(frame2, textvariable=var_zin, fg="red", underline=0, relief="ridge", bg="yellow3",
                                    width=17)
@@ -589,20 +589,20 @@ class troll:
     def __init__(self):
         newvin = Toplevel()
         newvin.title("Special")
-        frame = Frame(newvin, bg="gray12")
+        frame = Frame(newvin, bg="azure")
         frame.pack(fill=BOTH, expand=5)
 
-        self.Button_1 = Button(frame, text="Stern", command=self.go, width=40, height=20, bg="gray12", fg="cyan3",
+        self.Button_1 = Button(frame, text="Stern", command=self.go, width=40, height=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
-        self.Button_2 = Button(frame, text="Weihnachtsbaum", command=self.go2, width=40, height=20, bg="gray12",
-                               fg="cyan3", relief=RIDGE)
-        self.Button_3 = Button(frame, text="Baum1", command=self.go3, width=40, height=20, bg="gray12", fg="cyan3",
+        self.Button_2 = Button(frame, text="Weihnachtsbaum", command=self.go2, width=40, height=20, bg="azure",
+                               fg="DarkOrange3", relief=RIDGE)
+        self.Button_3 = Button(frame, text="Baum1", command=self.go3, width=40, height=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
-        self.Button_4 = Button(frame, text="Baum2", command=self.go4, width=40, height=20, bg="gray12", fg="cyan3",
+        self.Button_4 = Button(frame, text="Baum2", command=self.go4, width=40, height=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
-        self.Button_5 = Button(frame, text="Sphere", command=self.go5, width=40, height=20, bg="gray12", fg="cyan3",
+        self.Button_5 = Button(frame, text="Sphere", command=self.go5, width=40, height=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
-        self.Button_6 = Button(frame, text="Muster", command=self.go6, width=40, height=20, bg="gray12", fg="cyan3",
+        self.Button_6 = Button(frame, text="Muster", command=self.go6, width=40, height=20, bg="azure", fg="DarkOrange3",
                                relief=RIDGE)
 
         self.Button_1.grid(row=0, column=1, pady=2, padx=2)
@@ -771,7 +771,7 @@ class troll:
             t.pendown()
             t.pensize(3)
             itree(t, 250, 0.63,
-                  ["gray12", "brown", "red", "orange", "violet", "lightblue"])
+                  ["azure", "brown", "red", "orange", "violet", "lightblue"])
 
         if __name__ == '__main__':
             main()
@@ -800,7 +800,7 @@ class troll:
 
         def main():
             s = Screen()
-            s.bgcolor("gray12")
+            s.bgcolor("azure")
             p = Turtle()
             p.speed(0)
             p.hideturtle()
