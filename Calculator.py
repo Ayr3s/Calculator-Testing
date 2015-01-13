@@ -38,10 +38,10 @@ subMenu1.add_cascade(label="Theme", menu=subMenu2)
 subMenu1.add_separator()
 subMenu1.add_command(label="Exit", command=stop)
 
-subMenu2.add_command(label="Dark Theme")
-subMenu2.add_command(label="White Theme")
+subMenu2.add_command(label="1.Theme")
+subMenu2.add_command(label="2.Theme")
 
-subMenu3.add_command(label="About the Creator")
+subMenu3.add_command(label="Information")
 
 
 ################
