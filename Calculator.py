@@ -65,7 +65,7 @@ class Start:
         self.Label_8 = Label(frame, text="Potenz", bg="gray12", fg="cyan3")
         self.Label_9 = Label(frame, text="Zinsberechnung", bg="gray12", fg="cyan3")
         self.Label_10 = Label(frame, text="Weihnachtsspecial", bg="gray12", fg="cyan3")
-        self.Label_11 = Label(frame, text="©2015 - Lars Roth", bg="gray12", fg="cyan3")
+        self.Label_11 = Label(frame, text="©2015 - Lars Roth", bg="gray12", fg="cyan3", bd=1)
         self.Button_1 = Button(frame, text="Go!", command=add, width=11, bg="gray12", fg="cyan3", relief=RIDGE)
         self.Button_2 = Button(frame, text="Go!", command=sub, width=11, bg="gray12", fg="cyan3", relief=RIDGE)
         self.Button_3 = Button(frame, text="Go!", command=mul, width=11, bg="gray12", fg="cyan3", relief=RIDGE)
